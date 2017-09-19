@@ -17,7 +17,7 @@ public class CourseController {
 	@Autowired
 	private CourseService courseService;
 
-	@RequestMapping("/topics/{id}/courses") //listar
+	@RequestMapping("/topics/{id}/courses") //listar resultados
 	public List<Course> getAllCourses(@PathVariable("id")String id){
 		return courseService.getAllCourses(id);
 	}
